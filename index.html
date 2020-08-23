@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Dashboard</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+  <section id="container">
+    <!-- Header -->
+    <header class="header blue-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <a href="index.html" class="logo">DASHBOARD</a>
+    </header>
+    <!-- Header End -->
+    <!-- Sidebar -->
+    <aside>
+      <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered">
+            <a href="">
+              <img src="img/download.png" class="img-cir" width="80px">
+            </a>
+          </p>
+          <h5 class="centered">Anand Verma</h5>
+          <li class="mt-25">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-th"></i>
+              <span>Goals</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-money"></i>
+              <span>Retirement</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-bullseye"></i>
+              <span>Watch List</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-tags"></i>
+              <span>Recommendations</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-money"></i>
+              <span>Investment Plans</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a href="">
+              <i class="fa fa-users"></i>
+              <span>Resources</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </aside>
+    <!-- Sidebar End -->
+
+
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+
+          <div class="col-lg-12 investment">
+
+            <!--Investments-->
+            <div class="row">
+              <div class="box">
+                <div class="box-body outer-box boxshadow">
+                  <h4 class="title-blue" style="margin-top: 8px">Investment : Rs.3,50,000</h4>
+                  <div class="box">
+                    <div class="row">
+
+                      <div class="md-offset-1 col-md-3 col-sm-12">
+                        <div class="box-body boxshadow inner-box">
+                          <h6 class="box-title">Mutual Funds</h6>
+                          <div style="font-size: 14px;">Total Investment Amount</div>
+                          <span>Rs.1,50,000</span>
+                          <div class="mt-8">Total Current Value</div>
+                          <span>Rs.1,60,000</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-12">
+                        <div class="box-body boxshadow inner-box">
+                          <h6 class="box-title">Equity Funds</h6>
+                          <div style="font-size: 14px;">Total Investment Amount</div>
+                          <span>Rs.25,000</span>
+                          <div class="mt-8">Total Current Value</div>
+                          <span>Rs.30,000</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-12">
+                        <div class="box-body boxshadow inner-box">
+                          <h6 class="box-title">Tax Saver</h6>
+                          <div style="font-size: 14px;">Total Investment Amount</div>
+                          <span>Rs.20,000</span>
+                          <div class="mt-8">Total Current Value</div>
+                          <span>Rs.23,000</span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-12">
+                        <div class="box-body boxshadow inner-box">
+                          <h6 class="box-title">Retirement Plan</h6>
+                          <div style="font-size: 14px;">Total Investment Amount</div>
+                          <span>Rs.1,55,000</span>
+                          <div class="mt-8">Total Current Value</div>
+                          <span>Rs.1,70,000</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Investment Distribution-->
+
+            <div class="row mt-25">
+              <div class="box">
+                <div class="box-body boxshadow ibox">
+
+                  <div class="col-md-6 col-sm-12 mb">
+                    <h4 class="title-blue mt-8">Investment Distribution</h4>
+                    <canvas id="chartCanvas" max-width="400" max-height="400"></canvas>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12 mb">
+                    <h4 class="title-blue mt-8">Transactions</h4>
+                    <div>
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Bought Money Market Fund : 25th April
+                          <span class="badge badge-success">Rs. 10,000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Bought Retirement Plan : 16th July
+                          <span class="badge badge-success">Rs. 20,000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Bought Dummy Fund : 19th Aug
+                          <span class="badge badge-danger">Rs. 5000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Sold Y Fund : 16th July
+                          <span class="badge badge-success">Rs. 18,000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Bought ABC Policy : 25th May
+                          <span class="badge badge-success">Rs. 15,000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between title-blue">
+                          Sold PQR Fund : 18th July
+                          <span class="badge badge-danger">Rs. 2000</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Investment Distribution End-->
+
+            <!-- Pie chart VS Trusted fund -->
+
+            <div class="row mt-25">
+              <div class="box">
+                <div class="box-body boxshadow ibox">
+                  <div class="col-md-4 mb">
+                    <div id="chartContainer" class="mt-8" style="height: 300px; width: 100%;"></div>
+                  </div>
+                  <div class="col-md-8 mb">
+                    <div id="trendingChartContainer" class="mt-8" style="height: 300px; width: 100%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pie chart VS Trusted fund End -->
+            <!-- My performance VS Peers -->
+            <div class="row mt-25">
+              <div class="box">
+                <div class="box-body boxshadow">
+                  <div id="comparisonChart" class="comparisonChart mt-8"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--Infaltion box-->
+            <div class="row mt-25">
+              <div class="box">
+
+                <div class="box-body boxshadow">
+                  <div class="row">
+                    <h4 class="title-blue mt-8 ml-15">Inflation Calculator</h4>
+                  </div> 
+                  <div class="row">
+                    <div class="col-md-3 mt-8 text-center">
+                      <input type="number" value="0" id="iValue"> <span class="title-blue">- Value</span> 
+                    </div>
+                    <div class="col-md-3 mt-8 text-center">
+                      <input type="number" value="0" id="iTime"> <span class="title-blue">- Time</span> 
+                    </div>
+                    <div class="col-md-3 mt-8 text-center">
+                      <input type="number" value="0" id="iRate"><span class="title-blue"> - Rate</span> 
+                    </div>
+                    <div id="cal-btn" class="col-md-3 mb">
+                      <button class="btn cal-btn" type="submit" data-toggle="modal" data-target="#InflationModal" data-modal="'InflationModal'"
+                        onClick="calculateInflation()">Calculate</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- My performance VS Peers Ended -->
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="modal fade" id="InflationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="width: 350%;">
+          <div class="modal-header">
+            <h4 class="modal-title title-blue">
+              <b>Inflation Amount Calculator</b>
+            </h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="title">
+              <b>Result</b>
+            </h5>
+            <span id="iResult" value="0"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common-scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="js/comparisonChart.js"></script>
+  <script src="js/trendindFundChart.js"></script>
+  <script src="js/piechart.js"></script>
+  <script src="js/barChart.js"></script>
+  <script>
+    function calculateInflation() {
+      let R = +document.getElementById('iRate').value;
+      let V = +document.getElementById('iValue').value;
+      let T = +document.getElementById('iTime').value;
+      let x = 100 + R
+      let y = x / 100
+      let power = Math.pow(y, T)
+      let inflationResult = V * power;
+
+
+      document.getElementById('iResult').innerHTML = `After<b> ${R} years</b>, Inflation Amount for
+              <b>Rs. ${V}</b> with an average Inflation Rate of
+              <b>${R}%</b> will be
+              <b>Rs. ${inflationResult.toFixed(2)}`;
+      document.getElementById('iRate').value = 0
+      document.getElementById('iValue').value = 0
+      document.getElementById('iTime').value = 0
+    }
+  </script>
+</body>
+
+</html>
