@@ -204,9 +204,7 @@ ul.sidebar-menu li a.active i {
 .text-center{
     text-align: center;
 }
-.margin-auto{
-    margin: 0 auto;
-}
+
 
 .wrapper {
     display: inline-block;
@@ -281,14 +279,6 @@ a.logo:hover, a.logo:focus {
     display: inline-block;
 }
 
-ul li {
-	list-style: none;
-}
-
-#web-application, #text-editor, #directional, #video-player, #brand, #medical, #currency {
-    margin-top: 10px;
-}
-
 .box {
 	width: 100%;
 }
@@ -297,9 +287,12 @@ ul li {
     border: solid 0.5px #ccc;
     display: block;
 }
+
 .ibox{
     display: flex;
 }
+
+
 .list-group{
     max-height: 351px;;
 }
@@ -310,6 +303,7 @@ ul li {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 .inner-box {
 	background-color: #563d7c;
 	color: white;
